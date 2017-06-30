@@ -1,7 +1,7 @@
-package com.zxs.ssm.filter;
+package com.wyun.recommend.service.filter;
 
 
-import com.zxs.ssm.utils.LoggerUtil;
+import com.wyun.recommend.service.utils.LoggerUtil;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -11,13 +11,13 @@ import java.io.IOException;
 import java.util.Enumeration;
 
 /**
- * 编码：UTF-8
- * @author asen
+ * @author Miller
+ * 编码过滤
  */
 public class EncodingFilter implements Filter {
 
     private FilterConfig config = null;
-    private String ENCODING = "iso-8859-1";
+    private String ENCODING = "UTF-8";
 
     public void init(FilterConfig config) throws ServletException {
         this.setConfig(config);

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyun.recommend.service.dao.UserDAO">
+
+    <select id="queryUser" resultType="string">
+        SELECT user_name, password FROM users where user_name = ${userName} and password = ${password}
+    </select>
+
+    <select id="addUser" resultType="string">
+        INSERT  INTO users (user_name, password) VALUES (${userName}, ${password})
+    </select>
+
+
+</mapper>

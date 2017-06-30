@@ -31,7 +31,7 @@
   <!-- 设置servlet编码开始 -->
   <filter>
     <filter-name>Set Character Encoding</filter-name>
-    <filter-class>com.zxs.ssm.filter.EncodingFilter</filter-class>
+    <filter-class>com.wyun.recommend.service.filter.EncodingFilter</filter-class>
     <async-supported>true</async-supported>
     <init-param>
       <param-name>encoding</param-name>

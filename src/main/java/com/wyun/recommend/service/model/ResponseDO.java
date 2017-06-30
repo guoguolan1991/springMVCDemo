@@ -1,9 +1,11 @@
-package com.zxs.ssm.model;
+package com.wyun.recommend.service.model;
 
 import java.util.Map;
 
 /**
- * Created by asen on 16/5/11.
+ * @author Miller
+ * 返回结果类
+ * @param <T>
  */
 public class ResponseDO<T> {
     private int resultCode;
@@ -11,6 +13,7 @@ public class ResponseDO<T> {
     private String message;
     private Map extras;
 
+    public ResponseDO(){};
     public ResponseDO(int resultCode, T data) {
         this.resultCode = resultCode;
         this.data = data;

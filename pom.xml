@@ -11,6 +11,7 @@
   <properties>
     <spring.version>4.1.6.RELEASE</spring.version>
     <mybatis.version>3.2.7</mybatis.version>
+    <tomcat.plugin.version>2.2</tomcat.plugin.version>
   </properties>
 
   <dependencies>
@@ -158,5 +159,19 @@
 
   <build>
     <finalName>ssmDemo</finalName>
+    <!--<plugins>-->
+      <!--<plugin>-->
+        <!--<groupId>org.apache.tomcat.maven</groupId>-->
+        <!--<artifactId>tomcat7-maven-plugin</artifactId>-->
+        <!--<version>${tomcat.plugin.version}</version>-->
+        <!--<configuration>-->
+          <!--<url>http://localhost:8080/recommend</url>-->
+          <!--<server>TomcatServer</server>-->
+          <!--<path>/wyundata</path>-->
+          <!--<username>craig</username>-->
+          <!--<password>password</password>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+    <!--</plugins>-->
   </build>
 </project>
